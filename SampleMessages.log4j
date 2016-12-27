@@ -1,0 +1,184 @@
+<log4j:event logger="com.netty.echo.impl.EchoClient" timestamp="1481274107270" level="INFO" thread="main">
+<log4j:message><![CDATA[EchoClient init .......]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.logging.InternalLoggerFactory" timestamp="1481274107291" level="DEBUG" thread="main">
+<log4j:message><![CDATA[Using Log4J as the default logging framework]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.channel.MultithreadEventLoopGroup" timestamp="1481274107296" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.eventLoopThreads: 8]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent0" timestamp="1481274107320" level="DEBUG" thread="main">
+<log4j:message><![CDATA[java.nio.Buffer.address: available]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent0" timestamp="1481274107321" level="DEBUG" thread="main">
+<log4j:message><![CDATA[sun.misc.Unsafe.theUnsafe: available]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent0" timestamp="1481274107321" level="DEBUG" thread="main">
+<log4j:message><![CDATA[sun.misc.Unsafe.copyMemory: available]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent0" timestamp="1481274107322" level="DEBUG" thread="main">
+<log4j:message><![CDATA[direct buffer constructor: available]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent0" timestamp="1481274107323" level="DEBUG" thread="main">
+<log4j:message><![CDATA[java.nio.Bits.unaligned: available, true]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent0" timestamp="1481274107323" level="DEBUG" thread="main">
+<log4j:message><![CDATA[java.nio.DirectByteBuffer.<init>(long, int): available]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.Cleaner0" timestamp="1481274107324" level="DEBUG" thread="main">
+<log4j:message><![CDATA[java.nio.ByteBuffer.cleaner(): available]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent" timestamp="1481274107325" level="DEBUG" thread="main">
+<log4j:message><![CDATA[Java version: 7]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent" timestamp="1481274107326" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.noUnsafe: false]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent" timestamp="1481274107326" level="DEBUG" thread="main">
+<log4j:message><![CDATA[sun.misc.Unsafe: available]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent" timestamp="1481274107326" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.noJavassist: false]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent" timestamp="1481274107327" level="DEBUG" thread="main">
+<log4j:message><![CDATA[Javassist: unavailable]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent" timestamp="1481274107327" level="DEBUG" thread="main">
+<log4j:message><![CDATA[You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent" timestamp="1481274107327" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.tmpdir: /var/folders/m7/2d4_dtp50r902tm5tcb0dyfr0000gn/T (java.io.tmpdir)]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent" timestamp="1481274107328" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.bitMode: 64 (sun.arch.data.model)]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent" timestamp="1481274107328" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.noPreferDirect: false]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent" timestamp="1481274107328" level="DEBUG" thread="main">
+<log4j:message><![CDATA[io.netty.maxDirectMemory: 1908932608 bytes]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.channel.nio.NioEventLoop" timestamp="1481274107366" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.noKeySetOptimization: false]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.channel.nio.NioEventLoop" timestamp="1481274107366" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.selectorAutoRebuildThreshold: 512]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.PlatformDependent" timestamp="1481274107371" level="DEBUG" thread="main">
+<log4j:message><![CDATA[org.jctools-core.MpscChunkedArrayQueue: available]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.channel.DefaultChannelId" timestamp="1481274107501" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.processId: 2036 (auto-detected)]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.NetUtil" timestamp="1481274107504" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Djava.net.preferIPv4Stack: false]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.NetUtil" timestamp="1481274107504" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Djava.net.preferIPv6Addresses: false]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.NetUtil" timestamp="1481274107505" level="DEBUG" thread="main">
+<log4j:message><![CDATA[Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.NetUtil" timestamp="1481274107506" level="DEBUG" thread="main">
+<log4j:message><![CDATA[/proc/sys/net/core/somaxconn: 128 (non-existent)]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.channel.DefaultChannelId" timestamp="1481274107509" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.machineId: 38:c9:86:ff:fe:47:50:66 (auto-detected)]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.internal.ThreadLocalRandom" timestamp="1481274107509" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.initialSeedUniquifier: 0x812a1428d49cb9dc]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.ResourceLeakDetector" timestamp="1481274107535" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.leakDetection.level: simple]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.util.ResourceLeakDetector" timestamp="1481274107535" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.leakDetection.maxRecords: 4]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.buffer.PooledByteBufAllocator" timestamp="1481274107579" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.allocator.numHeapArenas: 8]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.buffer.PooledByteBufAllocator" timestamp="1481274107579" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.allocator.numDirectArenas: 8]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.buffer.PooledByteBufAllocator" timestamp="1481274107579" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.allocator.pageSize: 8192]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.buffer.PooledByteBufAllocator" timestamp="1481274107579" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.allocator.maxOrder: 11]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.buffer.PooledByteBufAllocator" timestamp="1481274107579" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.allocator.chunkSize: 16777216]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.buffer.PooledByteBufAllocator" timestamp="1481274107579" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.allocator.tinyCacheSize: 512]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.buffer.PooledByteBufAllocator" timestamp="1481274107579" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.allocator.smallCacheSize: 256]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.buffer.PooledByteBufAllocator" timestamp="1481274107580" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.allocator.normalCacheSize: 64]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.buffer.PooledByteBufAllocator" timestamp="1481274107580" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.allocator.maxCachedBufferCapacity: 32768]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.buffer.PooledByteBufAllocator" timestamp="1481274107580" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.allocator.cacheTrimInterval: 8192]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.buffer.ByteBufUtil" timestamp="1481274107597" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.allocator.type: pooled]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.buffer.ByteBufUtil" timestamp="1481274107597" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.threadLocalDirectBufferSize: 65536]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="io.netty.buffer.ByteBufUtil" timestamp="1481274107597" level="DEBUG" thread="main">
+<log4j:message><![CDATA[-Dio.netty.maxThreadLocalCharBufferSize: 16384]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="com.netty.echo.impl.EchoClient" timestamp="1481274107638" level="INFO" thread="main">
+<log4j:message><![CDATA[EchoClient is destroyed........]]></log4j:message>
+</log4j:event>
+
