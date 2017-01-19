@@ -12,13 +12,11 @@ public class BeatCheckClientHandler extends ChannelInboundHandlerAdapter {
 
     private Logger logger = Logger.getLogger(getClass());
 
-    private static ConnectionPool connectionPool = ConnectionPool.getConnectionPool();
-
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         RequestObj requestObj = (RequestObj)msg;
         logger.info("the check channel id is :"+requestObj.getChannelId());
-        if(Type.BEAT_CHECK.equals(requestObj.getType())){
+        if(Type.BEAT_CHECK.toString().equals(requestObj.getType())){
             ResponseObj responseObj = new ResponseObj();
             responseObj.setType(Type.BEAT_CHECK.toString());
             responseObj.setChannelId(requestObj.getChannelId());
@@ -28,7 +26,7 @@ public class BeatCheckClientHandler extends ChannelInboundHandlerAdapter {
                 responseObj.setMsg("the connection is not connected...........");
             }
             ctx.writeAndFlush(responseObj);
-        }else if(Type.RESPONSE_TIME_CHECK.equals(requestObj.getType())){
+        }else if(Type.RESPONSE_TIME_CHECK.toString().equals(requestObj.getType())){
             // Todo
             logger.info("===========待实现=================");
         }else {
@@ -38,7 +36,6 @@ public class BeatCheckClientHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        SocketChannel socketChannel = (SocketChannel)ctx.channel();
-        connectionPool.remove(socketChannel.id().asLongText());
+       logger.error(cause.getStackTrace());
     }
 }

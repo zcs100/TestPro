@@ -26,7 +26,7 @@ public class BeatCheckServerHandler extends ChannelInboundHandlerAdapter{
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         ResponseObj responseObj = (ResponseObj)msg;
         logger.info("the check channel id is :"+responseObj.getChannelId());
-        if(Type.BEAT_CHECK.equals(responseObj.getType())){
+        if(Type.BEAT_CHECK.toString().equals(responseObj.getType())){
             if("ok".equals(responseObj.getMsg())){
                 logger.info("连接正常..................");
             }else{
@@ -34,7 +34,7 @@ public class BeatCheckServerHandler extends ChannelInboundHandlerAdapter{
                 connectionPool.remove(socketChannel.id().asLongText());
                 logger.error("连接异常,error msg:"+responseObj.getMsg());
             }
-        }else if(Type.RESPONSE_TIME_CHECK.equals(responseObj.getType())){
+        }else if(Type.RESPONSE_TIME_CHECK.toString().equals(responseObj.getType())){
             // Todo
             logger.info("===========待实现=================");
         }else {
@@ -50,7 +50,8 @@ public class BeatCheckServerHandler extends ChannelInboundHandlerAdapter{
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        SocketChannel socketChannel = (SocketChannel)ctx.channel();
-        connectionPool.remove(socketChannel.id().asLongText());
+        logger.error(cause.getStackTrace());
+        /*SocketChannel socketChannel = (SocketChannel)ctx.channel();
+        connectionPool.remove(socketChannel.id().asLongText());*/
     }
 }

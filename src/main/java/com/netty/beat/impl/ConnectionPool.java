@@ -5,19 +5,20 @@ import org.apache.log4j.Logger;
 
 import java.util.AbstractMap;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by szc on 16/12/26.
  */
-public class ConnectionPool extends AbstractMap<String,SocketChannel>{
+public class ConnectionPool extends ConcurrentHashMap<String,SocketChannel>{
 
-    private Logger logger = Logger.getLogger(ConnectionPool.class);
+    private static Logger logger = Logger.getLogger(ConnectionPool.class);
 
-    private static ConnectionPool connectionPool;
+    private static ConnectionPool connectionPool = null;
 
     public static ConnectionPool getConnectionPool(){
         if(connectionPool == null){
-            synchronized (ConnectionPool.class){
+            synchronized (logger){
                 if(connectionPool == null){
                     connectionPool = new ConnectionPool();
                 }
@@ -38,7 +39,4 @@ public class ConnectionPool extends AbstractMap<String,SocketChannel>{
         return super.remove(key);
     }
 
-    public Set<Entry<String, SocketChannel>> entrySet() {
-        return this.entrySet();
-    }
 }

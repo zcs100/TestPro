@@ -3,6 +3,7 @@ package com.netty.beat.impl;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
+import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
@@ -20,12 +21,14 @@ public class BeatCheckClient {
     private Logger logger = Logger.getLogger(BeatCheckClient.class);
 
     public void start(String host,int port){
+        logger.info("client init begin ..............");
         EventLoopGroup worker = new NioEventLoopGroup();
         Bootstrap bootstrap = new Bootstrap();
         try{
             bootstrap.group(worker)
                     .channel(NioSocketChannel.class)
                     .remoteAddress(host,port)
+                    //.option(ChannelOption.SO_KEEPALIVE,true)
                     .handler(new ChannelInitializer<SocketChannel>() {
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ch.pipeline().addLast(new ObjectDecoder(ClassResolvers.cacheDisabled(null)))
@@ -34,12 +37,19 @@ public class BeatCheckClient {
                         }
                     });
             ChannelFuture future = bootstrap.connect().sync();
+            logger.info("client init finish ..............");
             future.channel().closeFuture().sync();
         } catch (InterruptedException e){
             e.printStackTrace();
         }finally {
             worker.shutdownGracefully();
         }
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        BeatCheckClient checkClient = new BeatCheckClient();
+        checkClient.start("127.0.0.1", 8009);
+
 
     }
 }
