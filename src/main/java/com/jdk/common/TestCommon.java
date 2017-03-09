@@ -81,4 +81,13 @@ public class TestCommon {
         logger.info("======"+str3.intern()==str3+"===========");
     }
 
+    /**
+     * 测试枚举类型的比较
+     */
+    @Test
+    public void testEnum(){
+        logger.info("==============="+(DateEnum.MON == DateEnum.MON));
+        logger.info("==============="+(DateEnum.MON.equals(DateEnum.MON)));
+    }
+
 }
