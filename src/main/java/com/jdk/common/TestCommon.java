@@ -86,8 +86,8 @@ public class TestCommon {
      */
     @Test
     public void testEnum(){
-        /*logger.info("==============="+(DateEnum.MON == DateEnum.MON));
-        logger.info("==============="+(DateEnum.MON.equals(DateEnum.MON)));*/
+        logger.info("==============="+(DateEnum.MON == DateEnum.MON));
+        logger.info("==============="+(DateEnum.MON.equals(DateEnum.MON)));
     }
 
 }
