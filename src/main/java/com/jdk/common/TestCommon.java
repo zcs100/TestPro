@@ -90,4 +90,26 @@ public class TestCommon {
         logger.info("==============="+(DateEnum.MON.equals(DateEnum.MON)));
     }
 
+    @Test
+    public void testThreadJoin(){
+        logger.info("begin execute main method");
+        try {
+            Thread t = new Thread(new ThreadTest());
+            t.start();
+            t.join(1000);
+            logger.error("直接跳过join方法了,哈哈哈");
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+        logger.info("end execute main method");
+    }
+
+    private class ThreadTest implements Runnable{
+        public void run() {
+            for(int i=0;i<100;i++){
+                System.out.println("current data is :"+i);
+            }
+        }
+    }
+
 }
