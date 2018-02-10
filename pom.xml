@@ -7,6 +7,10 @@
   <version>1.0-SNAPSHOT</version>
   <name>TestPro Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+    <!-- 主要依赖库的版本定义 -->
+    <spring.version>4.2.7.RELEASE</spring.version>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -69,6 +73,65 @@
       <artifactId>ganymed-ssh2</artifactId>
       <version>262</version>
     </dependency>
+    <!-- SPRING basic begin -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <!-- spring mvc -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <!-- spring mvc end -->
+
+    <!-- spring jdbc begin -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>4.0.2.RELEASE</version>
+    </dependency>
+    <!-- spring jdbc end -->
+    <!--测试 -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>${spring.version}</version>
+      <scope>test</scope>
+    </dependency>
+
   </dependencies>
   <build>
     <finalName>TestPro</finalName>
